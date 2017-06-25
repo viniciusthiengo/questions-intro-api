@@ -5,7 +5,7 @@
 
     <string name="slide_1_title">Perguntas a comunidade</string>
     <string name="slide_1_description">
-        Escolha a categoria de sua perunta e então
+        Escolha a categoria de sua pergunta e então
         \n
         a libere para a comunidade correta, com
         \n
@@ -13,7 +13,7 @@
     </string>
     <string name="slide_1_button_label">Quais os tipos de perguntas?</string>
     <string name="slide_1_button_message">
-        De multiplas escolhas, com: texto, mapa, imagem, vídeo e / ou áudio.
+        De múltiplas escolhas, com: texto, mapa, imagem, vídeo e / ou áudio.
     </string>
 
 
@@ -21,9 +21,16 @@
     <string name="slide_2_description">
         Permita, ou não, que pessoas próximas a
         \n
-        você localmente recebam suas perguntas
+        você, localmente, recebam suas perguntas
         \n
         por meio do rastreador de membros.
+    </string>
+
+
+    <string name="grant_permissions">Liberar permissões</string>
+    <string name="mis_grant_permissions">Liberar permissões</string>
+    <string name="please_grant_permissions">
+        Para poder prosseguir é importante liberar as permissões de localização
     </string>
 
 
@@ -39,6 +46,9 @@
 
     <string name="slide_4_title">Termos e condições de uso</string>
     <string name="slide_4_checkbox_label">Concordo com os termos e condições de uso</string>
+    <string name="slide_4_checkbox_error">
+        Você precisa concordar com os termos e condições de uso para prosseguir
+    </string>
     <string name="slide_4_content">
         Passagem padrão original de Lorem Ipsum, usada desde o século XVI.
         \n\n
@@ -109,12 +119,5 @@
         and annoyances accepted. The wise man therefore always holds in these matters to this principle of
         selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to
         avoid worse pains.
-    </string>
-
-
-    <string name="grant_permissions">Liberar permissões</string>
-    <string name="mis_grant_permissions">Liberar permissões</string>
-    <string name="please_grant_permissions">
-        Para poder prosseguir é importante liberar as permissões de localização
     </string>
 </resources>

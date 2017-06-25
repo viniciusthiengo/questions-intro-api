@@ -14,11 +14,16 @@ import kotlinx.android.synthetic.main.fragment_terms_conditions_slide.*
 
 class TermsConditionsSlide: SlideFragment() {
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(
+            inflater: LayoutInflater?,
+            container: ViewGroup?,
+            savedInstanceState: Bundle? ): View? {
+
         return inflater?.inflate(R.layout.fragment_terms_conditions_slide, container, false)
     }
 
     override fun canMoveFurther(): Boolean {
+
         if( cb_concordo.isChecked ){
             SPInfo(activity).updateIntroStatus( cb_concordo.isChecked )
             val intent = Intent(activity, QuestionsActivity::class.java)
@@ -28,7 +33,7 @@ class TermsConditionsSlide: SlideFragment() {
     }
 
     override fun cantMoveFurtherErrorMessage(): String {
-        return "Você precisa concordar com os termos e condições de uso para prosseguir."
+        return activity.resources.getString(R.string.slide_4_checkbox_error)
     }
 
     override fun backgroundColor(): Int {

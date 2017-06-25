@@ -12,7 +12,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        app:civ_border_color="#FF000000"
         app:civ_border_width="0dp" />
 
     <TextView

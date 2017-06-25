@@ -18,13 +18,14 @@ class IntroActivity : MaterialIntroActivity() {
 
         verifyIntroActivity()
 
-        backButtonTranslationWrapper
+        /*backButtonTranslationWrapper
             .setEnterTranslation {
-                view, percentage -> view.alpha = percentage
-            }
+                view, percentage -> view.alpha = percentage * 5
+            }*/
 
-        val possiblePermissions = arrayOf(Manifest.permission.CAMERA)
-        val neededPermissions = arrayOf(Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
+        //setSkipButtonVisible()
+        //hideBackButton()
+        //enableLastSlideAlphaExitTransition(true)
 
         addSlide( SlideFragmentBuilder()
             .backgroundColor(R.color.slide_1)
@@ -41,6 +42,10 @@ class IntroActivity : MaterialIntroActivity() {
             )
         )
 
+        val neededPermissions = arrayOf(
+                Manifest.permission.ACCESS_FINE_LOCATION,
+                Manifest.permission.ACCESS_COARSE_LOCATION )
+
         addSlide( SlideFragmentBuilder()
             .backgroundColor(R.color.slide_2)
             .buttonsColor(R.color.slide_button)
@@ -49,6 +54,8 @@ class IntroActivity : MaterialIntroActivity() {
             .title( resources.getString(R.string.slide_2_title) )
             .description( resources.getString(R.string.slide_2_description) )
             .build() )
+
+        val possiblePermissions = arrayOf(Manifest.permission.CAMERA)
 
         addSlide( SlideFragmentBuilder()
             .backgroundColor(R.color.slide_3)
@@ -60,10 +67,6 @@ class IntroActivity : MaterialIntroActivity() {
             .build() )
 
         addSlide( TermsConditionsSlide() )
-
-        //hideBackButton()
-        //setSkipButtonVisible()
-        //enableLastSlideAlphaExitTransition(true)
     }
 
 

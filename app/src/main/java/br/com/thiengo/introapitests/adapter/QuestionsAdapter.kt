@@ -13,7 +13,7 @@ import de.hdodenhof.circleimageview.CircleImageView
 
 class QuestionsAdapter(
         private val context: Context,
-        private val carros: List<Question>) :
+        private val questions: List<Question>) :
         RecyclerView.Adapter<QuestionsAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(
@@ -27,11 +27,11 @@ class QuestionsAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.setData(carros[position])
+        holder.setData( questions[position] )
     }
 
     override fun getItemCount(): Int {
-        return carros.size
+        return questions.size
     }
 
 
