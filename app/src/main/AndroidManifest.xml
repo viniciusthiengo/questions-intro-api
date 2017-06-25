@@ -25,7 +25,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".QuestionsActivity" />
+
+        <activity
+            android:name=".QuestionsActivity" />
     </application>
 
 </manifest>
