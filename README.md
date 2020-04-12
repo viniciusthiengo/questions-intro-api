@@ -4,7 +4,7 @@ Projeto Kotlin Android da segunda parte do artigo [Colocando Telas de Introduç�
 
 Artigo que discute em detalhes a Material-Intro-Screen API.
 
-API que permite a fácil implementação de telas de introdução utilizando o formato de slides. Até mesmo slide para solicitação de permissão é possível utilizar.
+API que permite a fácil implementação de telas de introdução utilizando o formato de slides. Até mesmo slide para solicitação de permissão em tempo de execução é possível utilizar.
 
 <img src="https://www.thiengo.com.br/img/post/normal/87ekgvgp7ic2573u01h061tul442abb21917b81fb148b156578a045c16.jpg" width="450" alt="Telas de introdução no aplicativo Android Questions?">
 
